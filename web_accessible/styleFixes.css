@@ -1,0 +1,14 @@
+#WHOS_OUT .HomeWidget__Header--actn {
+    visibility: visible;
+    opacity: 1;
+}
+
+#FixedTime {
+    /*background-color: #714388;*/
+    background-color: black;
+    color: white;
+}
+
+#FixedTime #type {
+    display: none;
+}

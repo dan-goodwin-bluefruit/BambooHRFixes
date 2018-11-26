@@ -1,0 +1,36 @@
+{
+    "name": "BambooHR Fixes",
+    "version": "1.0",
+    "description": "Fix issues with BambooHR",
+    "permissions": ["activeTab", "declarativeContent"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://bluefruit.bamboohr.co.uk/home"],
+            "js": ["jquery-3.3.1.min.js", "fixes.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        "web_accessible/styleFixes.css",
+        "web_accessible/addEmployeeId.js"
+    ],
+    "manifest_version": 2
+}
