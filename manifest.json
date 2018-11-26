@@ -24,13 +24,13 @@
     "content_scripts": [
         {
             "matches": ["https://bluefruit.bamboohr.co.uk/home"],
-            "js": ["jquery-3.3.1.min.js", "fixes.js"],
+            "js": ["fixes.js"],
             "run_at": "document_idle"
         }
     ],
     "web_accessible_resources": [
         "web_accessible/styleFixes.css",
-        "web_accessible/addEmployeeId.js"
+        "web_accessible/fixRemainingHoliday.js"
     ],
     "manifest_version": 2
 }
