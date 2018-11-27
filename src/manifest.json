@@ -1,7 +1,7 @@
 {
-    "name": "BambooHR Fixes",
-    "version": "1.0.1",
-    "description": "Fix issues with BambooHR",
+    "name": "BambooHR Fixes (Bluefruit)",
+    "version": "1.0.2",
+    "description": "Fix issues with BambooHR when used at Bluefrut",
     "permissions": ["activeTab", "declarativeContent"],
     "background": {
         "scripts": ["background.js"],
