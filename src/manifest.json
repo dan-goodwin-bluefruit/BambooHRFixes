@@ -27,7 +27,7 @@
                 "https://bluefruit.bamboohr.co.uk/home",
                 "https://bluefruit.bamboohr.co.uk/home/"
             ],
-            "js": ["fixes.js"],
+            "js": ["injectFixes.js"],
             "run_at": "document_idle"
         }
     ],
