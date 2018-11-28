@@ -2,8 +2,6 @@ $(document).ready(function() {
     var elements = $('.TimeOffWidget__type-available');
     let timeOffElement = elements.first();
 
-    var employeeId = $('#FixesEmployeeId').text();
-
     let current = new Date();
     let year = current.getFullYear();
     var data = {
