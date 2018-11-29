@@ -27,13 +27,25 @@
                 "https://bluefruit.bamboohr.co.uk/home",
                 "https://bluefruit.bamboohr.co.uk/home/"
             ],
-            "js": ["injectFixes.js"],
+            "js":
+                [
+                    "injectFixes.js",
+                    "injectNavigationChanges.js"
+                ],
+            "run_at": "document_idle"
+        },
+        {
+            "matches": [
+                "https://bluefruit.bamboohr.co.uk/*/**"
+            ],
+            "js": ["injectNavigationChanges.js"],
             "run_at": "document_idle"
         }
     ],
     "web_accessible_resources": [
         "web_accessible/styleFixes.css",
-        "web_accessible/fixRemainingHoliday.js"
+        "web_accessible/fixRemainingHoliday.js",
+        "web_accessible/navigationChanges.js"
     ],
     "manifest_version": 2
 }
