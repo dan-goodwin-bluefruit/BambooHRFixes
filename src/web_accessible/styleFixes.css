@@ -4,11 +4,14 @@
 }
 
 #FixedTime {
-    /*background-color: #714388;*/
     background-color: black;
     color: white;
 }
 
 #FixedTime #type {
     display: none;
+}
+
+.PTOCard__main__iconTime #FixedTime {
+    font-size: 43px;
 }

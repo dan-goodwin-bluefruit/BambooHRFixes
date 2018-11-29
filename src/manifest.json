@@ -36,6 +36,17 @@
         },
         {
             "matches": [
+                "https://bluefruit.bamboohr.co.uk/employees/pto/**"
+            ],
+            "js":
+                [
+                    "injectFixes.js",
+                    "injectNavigationChanges.js"
+                ],
+            "run_at": "document_idle"
+        },
+        {
+            "matches": [
                 "https://bluefruit.bamboohr.co.uk/*/**"
             ],
             "js": ["injectNavigationChanges.js"],
