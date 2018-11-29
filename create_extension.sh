@@ -5,4 +5,4 @@ cd $SCRIPT_PATH
 
 rm bamboo.zip
 cd src
-zip ../bamboo.zip background.js injectFixes.js images/* manifest.json web_accessible/*
+zip ../bamboo.zip manifest.json *.js images/* web_accessible/*
