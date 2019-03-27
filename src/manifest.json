@@ -1,6 +1,6 @@
 {
     "name": "BambooHR Fixes (Bluefruit)",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Fix issues with BambooHR when used at Bluefrut",
     "permissions": ["activeTab", "declarativeContent"],
     "background": {
@@ -25,7 +25,9 @@
         {
             "matches": [
                 "https://bluefruit.bamboohr.co.uk/home",
-                "https://bluefruit.bamboohr.co.uk/home/"
+                "https://bluefruit.bamboohr.co.uk/home/",
+                "https://bluefruit.bamboohr.com/home",
+                "https://bluefruit.bamboohr.com/home/"
             ],
             "js":
                 [
@@ -36,7 +38,8 @@
         },
         {
             "matches": [
-                "https://bluefruit.bamboohr.co.uk/employees/pto/**"
+                "https://bluefruit.bamboohr.co.uk/employees/pto/**",
+                "https://bluefruit.bamboohr.com/employees/pto/**"
             ],
             "js":
                 [
@@ -47,7 +50,8 @@
         },
         {
             "matches": [
-                "https://bluefruit.bamboohr.co.uk/*/**"
+                "https://bluefruit.bamboohr.co.uk/*/**",
+                "https://bluefruit.bamboohr.com/*/**"
             ],
             "js": ["injectNavigationChanges.js"],
             "run_at": "document_idle"
