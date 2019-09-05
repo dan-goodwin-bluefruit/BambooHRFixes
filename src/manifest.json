@@ -2,10 +2,9 @@
     "name": "BambooHR Fixes (Bluefruit)",
     "version": "1.0.7",
     "description": "Fix issues with BambooHR when used at Bluefrut",
-    "permissions": ["activeTab", "declarativeContent"],
+    "permissions": ["activeTab"],
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "scripts": ["background.js"]
     },
     "page_action": {
         "default_icon": {
